@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <main class="main-grid-container">
+    <div class="left-side-container">
+      <p class="big-text">
+        Learn to code by watching others
+      </p>
+      <p class="small-text">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div class="right-side-container">
+      <div class="subscribe-prompt">
+        <p><span class="highlight">Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+      <div class="form-container">
+        <form action="./" post="GET" id="form">
+          <div class="form-content-container">
+            <div class="input-group">
+              <input type="text" name="name" id="name" placeholder="First Name" onkeyup="validateName()">
+            </div>
+            <div class="input-group">
+              <input type="text" name="lastname" id="lastname" placeholder="Last Name" onkeyup="validateLastname()">
+            </div>
+            <div class="input-group">
+              <input type="email" name="email" id="email" placeholder="Email" onkeyup="validateEmail()">
+            </div>
+            <div class="input-group">
+              <input type="password" name="password" id="password" placeholder="Password" onkeyup="validatePassword()">
+            </div>
+            <div class="button-agree-terms">
+              <button type="submit">claim your free trail</button>
+              <p>By clicking the button you are agreeing to our <span class="terms">Terms and Services</span></p>
+            </div>
+            <span class="form-error"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
